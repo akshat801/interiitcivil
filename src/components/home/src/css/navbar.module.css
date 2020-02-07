@@ -1,0 +1,51 @@
+.navParentDiv{
+    /* background-color: #E5E5E5; */
+    display: flex;
+    justify-content: space-around;
+}
+.navParent{
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    flex:1;
+    /* width: 50%; */
+    /* float: right; */
+}
+.logo{
+    flex:1;
+}
+.logo>img{
+    /* margin-left: 8vw; */
+    margin-top:10px;
+}
+.navChild{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-transform: capitalize;
+    text-decoration: none;
+    /* Blue1 */
+    float: right;
+    color: #1C445A;
+}
+.active::after{
+    width:100% !important;
+}
+.navChild::after{
+    content: '';
+    display: block;
+    width: 0;
+    margin-top:2px;
+    height: 2px;
+    background: #FBBE4A;
+    transition: width .5s;
+}
+.navChild:hover::after{
+    width:100%;
+}
