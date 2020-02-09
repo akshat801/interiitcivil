@@ -87,3 +87,16 @@ display: flex;
     width:600px;
     height:400px;
 }
+.note{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Yellow1 */
+
+color:rgba(28, 68, 90, 0.6);;
+}

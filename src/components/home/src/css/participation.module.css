@@ -1,0 +1,4 @@
+.participationParent{
+    display: flex;
+    flex-wrap: wrap;
+}

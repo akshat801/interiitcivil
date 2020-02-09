@@ -22,7 +22,9 @@ class Main extends React.Component{
                         <img src={arrow} alt="arrow"/>
                         </button>
                     </div>
-
+                    <div className={styles.note}>
+                        Problem Statements are uploaded. <span style={{color:'#FBBE4A',cursor:'pointer'}}>Click to Download</span>    
+                    </div>
                 </div>
                 <div className={styles.mainContainer2}>
                    <img src={theme} alt="theme"/>
