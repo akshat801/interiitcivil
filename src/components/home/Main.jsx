@@ -1,7 +1,7 @@
 import React from 'react';
 import  styles from './src/css/main.module.css'
-import arrow from './src/img/Vector.jpg'
-import theme from './src/img/theme.png'
+import arrow from './src/img/next.png'
+import theme from './src/img/theme.jpg'
 
 class Main extends React.Component{
     render(){
@@ -13,13 +13,13 @@ class Main extends React.Component{
                     <div className={styles.date}>
                         <div>21-22 March, 2020</div>
                         <div>
-                            <hr/>
+                            <hr className={styles.hr}/>
                         </div>
                     </div>
                     <div className={styles.description}>A 3 day sprint to test your Civil Engineering skills. Also some 2 liner- description like this</div>
                     <div>
                         <button className={styles.more}>Learn More
-                        <img src={arrow} alt="arrow"/>
+                        <img src={arrow} alt="arrow" style={{width:'12px',height:'12px',marginLeft:'4px'}}/>
                         </button>
                     </div>
                     <div className={styles.note}>

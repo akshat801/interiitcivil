@@ -3,21 +3,25 @@ import React from 'react';
 import Navbar from './Navbar';
 import AboutUs from './AboutUs';
 import Events from './Events';
-import  './src/css/index.module.css'
+import  styles from './src/css/index.module.css'
 import Contact from './Contact'
 // import Participation from './ParticipatingIits';
 class Home extends React.Component{
     render(){
         return(
-            <div style={{backgroundColor:'#FFFFFF',marginLeft:'8vw'}}>
-                <Navbar/>
-                <Main/>
+            <div className={styles.indexParent}>
                 <div>
-                    <p>About Us</p>
+                <Navbar/>
+                </div>
+                <div className={styles.main}>
+                <Main/>
+                </div>
+                <div className={styles.about}>
+                    <p className={styles.heading}>About Us</p>
                     <AboutUs/>
                 </div>
-                <div>
-                    <p>Events</p>
+                <div className={styles.events}>
+                    <p className={styles.heading}>Events</p>
                     <Events/>
                 </div>
                 {/* <div>
@@ -25,7 +29,6 @@ class Home extends React.Component{
                     <Participation/>
                 </div> */}
                 <div>
-                    <p>Contact Us</p>
                     <Contact/>
                 </div>
             </div>

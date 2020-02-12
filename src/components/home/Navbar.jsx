@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 export default class Navbar extends React.Component{
     render(){
-        const nav = [{name:'about us',url:'/'},{name:'events',url:'/'},{name:'sposors',url:'/'},{name:'problem statement',url:'/'},{name:'contact',url:'/'}]
+        const nav = [{name:'about us',url:'/about'},{name:'events',url:'/events'},{name:'sponsors',url:'/'},{name:'problem statement',url:'/'},{name:'contact',url:'/'}]
         return(
         <div className={styles.navParentDiv}>
             <div className={styles.logo}>

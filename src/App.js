@@ -10,7 +10,14 @@ const Home = Loadable({
   loader:()=> import ('./components/home/Index'),
   loading: Loading
 })
-
+const About = Loadable({
+  loader:()=>import('./components/aboutUs/index'),
+  loading:Loading
+})
+const Event = Loadable({
+  loader:()=>import('./components/events/index'),
+  loading:Loading
+})
 export default class App extends React.Component{
   render(){
     return(
@@ -18,6 +25,8 @@ export default class App extends React.Component{
         <Switch>
             <React.Fragment>
                 <Route exact path="/" component={Home}/>
+                <Route exact path="/about" component={About}/>
+                <Route exact path="/events" component={Event}/>
             </React.Fragment>
         </Switch>
       </BrowserRouter>

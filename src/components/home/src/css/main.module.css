@@ -1,7 +1,11 @@
-
+@font-face{
+    font-family: gilroy;
+    src: url('../img/gilroy.otf');
+}
 .mainContainer{
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
+    margin:52px 0px;
     /* align-content: center;   */
     /* background: #E5E5E5;   */
 }
@@ -26,7 +30,7 @@
     
 }
 .heading{
-    font-family: Gilroy;
+    font-family: gilroy;
 font-style: normal;
 font-weight: 800;
 font-size: 54px;
@@ -49,7 +53,16 @@ line-height: 36px;
 
 color: #3788AA;
 display: flex;
-
+justify-content: space-between;
+align-items: center;
+width:490px;
+}
+.hr{
+    background-color: #FBBE4A;
+    border-style: none;
+    /* margin: 0; */
+    width: 245px;
+    height: 2px;
 }
 .description{
     font-family: Noto Sans;
@@ -74,7 +87,7 @@ display: flex;
     line-height: 21px;
     /* identical to box height */
     cursor: pointer;
-    text-transform: capitalize;
+    text-transform: uppercase;
 
     /* Blue1 */
 

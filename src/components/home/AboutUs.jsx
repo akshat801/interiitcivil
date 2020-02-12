@@ -8,16 +8,16 @@ export default class AboutUs extends React.Component{
         const aboutUs =[
             {
                 title:'our vision',
-                description:'The Conclave is primarily aimed at boosting technical expertise of the students by serving as an interface to the current industrial scenario.'
+                description:'The IIT Roorkee Civil Conclave aims to lighten the spark that lies within the heart of all feisty civil engineers by appetizing their will with a meetup which would incorporate "Innovation and Technical Soundness".'
             },
             {
                 title:'our concept',
-                description:'The Conclave is primarily aimed at boosting technical expertise of the students by serving as an interface to the current industrial scenario.'
+                description:'The basic concept behind this Conclave is to inculcate technical aspects amongst students by serving as an interface to the current industrial scenario.'
 
             },
             {
                 title:'our theme',
-                description:'The Conclave is primarily aimed at boosting technical expertise of the students by serving as an interface to the current industrial scenario.'
+                description:"'Unveiling The Flume to Future'.Future is an entity at the back of each person's mind "
             }
         ]
         return(

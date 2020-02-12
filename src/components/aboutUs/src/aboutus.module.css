@@ -1,0 +1,95 @@
+
+.aboutHead{
+width:100%;
+height:400px;
+background: #1C445A;
+border-radius: 2px;
+display: flex;
+align-items: center;
+    justify-content: start;
+}
+.heading{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 150%;
+    /* identical to box height, or 72px */
+    text-transform: uppercase;
+    
+    /* Yellow1 */
+    color: #FBBE4A;   
+}
+.aboutHr{
+    background: #FBBE4A;
+    width: 126px;
+    height: 2px;
+    margin: 0;
+    border-style: none;
+    margin-left:10px;
+}
+.heading , .subHeading,.navbar{
+    margin-left:104px;
+}
+.subHeading,.aboutHead{
+    margin-top:100px;
+}
+.subHeading{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 54px;
+
+/* identical to box height */
+text-transform: capitalize;
+
+/* Blue2 */
+color: #1B638B;
+}
+/* .aboutChild{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} */
+.title{
+    display: flex;
+    align-items: center;
+    
+}
+.title>p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 8px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    /* Blue3 */
+
+    color: #3788AA;
+}
+.description{
+    font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 170%;
+margin:0 56px;
+/* or 27px */
+width: 651px;
+text-align: justify;
+
+color: #1C445A;
+
+opacity: 0.8;
+}
+.aboutGrandchild{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 110px;
+    align-items: center;
+}
