@@ -28,7 +28,22 @@ color: #1B638B;
 
 }
 
-.main,.events,.contact,.about,.nav{
+.main,.events,.about{
     padding-left:100px;
 
+}
+@media only screen and (max-width:768px){
+    .main,.events,.about{
+        padding-left:14px;
+    }
+    .about{
+        margin: 30px 0;
+        background-image: url('../img/aboutMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    .heading{
+        font-size: 20px;
+line-height: 30px;
+    }
 }

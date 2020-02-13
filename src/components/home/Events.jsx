@@ -4,6 +4,7 @@ import pg_research from './src/img/pg_research.jpg';
 import model_exibition from './src/img/model_exibition.jpg';
 import lectures from './src/img/lectures.jpg';
 import styles from './src/css/events.module.css';
+import { Link } from 'react-router-dom';
   
 
 export default class Events extends React.Component{
@@ -56,7 +57,7 @@ export default class Events extends React.Component{
                             </div>
                             <div className={styles.eventDate}>
                                 <p className={styles.date}>{list.date}</p>
-                                <p className={styles.learn}>LEARN MORE</p>
+                                <Link className={styles.learn} to='/events'>LEARN MORE</Link>
                             </div>
                         </div>
                             <img src={list.image} alt="fgh" className={styles.eventChild2}/>

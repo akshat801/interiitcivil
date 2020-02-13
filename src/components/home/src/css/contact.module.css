@@ -9,9 +9,7 @@ line-height: 27px;
 
 color: #1B638B;
 }
-.contactParent{
-    padding-left: 100px !important;
-}
+
 .heading{
     font-family: Poppins;
 font-style: normal;
@@ -28,8 +26,9 @@ text-transform: capitalize;
 color: #1B638B;
 }
 .contactParent{
+    padding-left: 100px !important;
     padding:60px 0 ;
-    background-image: url('../img/contactback.jpg');
+    /* background-image: url('../img/contactback.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -172,9 +171,89 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 22px;
+text-align: center;
 /* identical to box height */
 text-transform: capitalize;
 margin-left:10px !important;
 
 color: rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width:768px){
+    .contactParent{
+        margin:0 14px;
+    padding-left: 0 !important;
+
+    }
+    .heading{
+        font-size:20px;
+        line-height: 30px;
+    }
+    .query{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .subject{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:flex-start;
+        width:300px;
+    }
+    .subject>input{
+        width:200px;
+        margin:10px 0;
+    }
+    input:nth-child(2){
+        width:240px !important;
+    }
+    .message{
+        margin-left: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .message>textarea{
+        width: 240px;
+        height:74px;
+    }
+    .send{
+        width: 106px;
+    height: 38px;
+    font-size: 12px;
+    margin: 10px 0;
+    }
+    .hr{
+    width:98%;
+    margin-left: 0;
+    height: 2px;
+    }
+    .contactChild{
+        width: 90%;
+        margin-left: 14px;
+    }
+    .contactChild1>img{
+        width:150px;
+        height:50px;
+    }
+    .date{
+        font-size: 13px;
+        line-height: 16px;
+        margin: 0 0 8px 37px;
+    }
+    .icon{
+        margin-left: 38px !important;
+    }
+    .description{
+        display: none;
+    }
+    .verticalHr{
+        margin: 0 20px;
+        height: 15vh;
+    }
+    .contactChild2{
+        width: 180px;
+    }
+    .text{
+        font-size: 13px;
+        line-height: 16px;
+    }
+
 }

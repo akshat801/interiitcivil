@@ -113,3 +113,50 @@ line-height: 24px;
 
 color:rgba(28, 68, 90, 0.6);;
 }
+
+@media only screen and (max-width:768px){
+    .mainContainer{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .mainContainer2{
+        display: none;
+    }
+    .collage{
+        font-size: 16px;
+    line-height: 24px;
+    }
+    .heading{
+        font-size: 28px;
+line-height: 34px;
+
+    }
+    .date{
+        font-size: 16px;
+line-height: 24px;
+max-width:250px;
+    }
+    .hr{
+        max-width: 88px;
+    }
+    .description{
+        font-size: 14px;
+line-height: 19px;
+    }
+    .more{
+        width: 124px;
+height: 40px;
+font-size: 12px;
+line-height: 18px;
+    }
+    .note{
+        font-size: 14px;
+line-height: 21px;
+    }
+   .collage,.heading,.note,.description,.date,.more{
+       margin:4px 0;
+   }
+   .note,.description{
+    max-width:290px;
+   }
+}

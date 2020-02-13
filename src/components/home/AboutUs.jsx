@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './src/css/aboutUs.module.css'
 import line from './src/img/line.jpg'
 import about from './src/img/aboutus.png'
+import { Link } from 'react-router-dom';
 
 export default class AboutUs extends React.Component{
     render(){
@@ -28,7 +29,7 @@ export default class AboutUs extends React.Component{
                                 <div>
                                     <div className={styles.title}> <img src={line} alt="line"/> <p>{list.title}</p></div>
                                     <p className={styles.description}>{list.description}</p>
-                                    <div className={styles.more}>read more</div>
+                                    <Link className={styles.more} to='/about'>read more</Link>
                                 </div>
                             )
                         }):null}
