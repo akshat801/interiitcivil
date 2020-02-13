@@ -2,7 +2,7 @@ import React from 'react';
 import  styles from './src/css/main.module.css'
 import arrow from './src/img/next.png'
 import theme from './src/img/theme.jpg'
-
+import { Link} from 'react-router-dom';
 class Main extends React.Component{
     render(){
         return(
@@ -16,14 +16,14 @@ class Main extends React.Component{
                             <hr className={styles.hr}/>
                         </div>
                     </div>
-                    <div className={styles.description}>A 3 day sprint to test your Civil Engineering skills. Also some 2 liner- description like this</div>
+                    <div className={styles.description}>A 2 day sprint to test your Civil Engineering skills. Also some 2 liner- description like this</div>
                     <div>
                         <button className={styles.more}>Learn More
                         <img src={arrow} alt="arrow" style={{width:'12px',height:'12px',marginLeft:'4px'}}/>
                         </button>
                     </div>
                     <div className={styles.note}>
-                        Problem Statements are uploaded. <span style={{color:'#FBBE4A',cursor:'pointer'}}>Click to Download</span>    
+                        Problem Statements are uploaded. <Link style={{color:'#FBBE4A',cursor:'pointer',textDecoration:'none'}} to='/problems'>Click to Download</Link>    
                     </div>
                 </div>
                 <div className={styles.mainContainer2}>

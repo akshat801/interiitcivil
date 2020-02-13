@@ -6,6 +6,8 @@ import React from 'react'
 import styles from './src/events.module.css'
 import Navbar from '../home/Navbar'
 import Contact from '../home/Contact'
+import { Link } from 'react-router-dom'
+import headImage from './src/head.png'
 
 export default class Events extends React.Component{
     render(){
@@ -37,6 +39,7 @@ export default class Events extends React.Component{
                 <div className={styles.eventsHead}>
                     <p className={styles.heading}>events</p>
                     <hr className={styles.eventsHr}/>
+                    <img src={headImage} alt=""/>
                 </div>
                <div>
                {events?events.map((list,index)=>{
@@ -45,10 +48,10 @@ export default class Events extends React.Component{
                             <div className={styles.subEvent}>
                                 <p className={styles.eventTitle}>{list.title}</p>
                                 <p className={styles.eventDescription}>{list.description}</p>
-                                <button className={styles.readProblem}>read problem statement</button>    
+                                <Link className={styles.readProblem} to='/problems'>read problem statement</Link>    
                             </div>
                             <div>
-                                <img src={list.image} alt=""/>
+                                <img className={styles.eventsImage} src={list.image} alt=""/>
                             </div>
                         </div>
                     )

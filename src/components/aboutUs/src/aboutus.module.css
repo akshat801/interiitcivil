@@ -13,6 +13,7 @@ align-items: center;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
+    margin-left:104px;
     line-height: 150%;
     /* identical to box height, or 72px */
     text-transform: uppercase;
@@ -28,30 +29,6 @@ align-items: center;
     border-style: none;
     margin-left:10px;
 }
-.heading , .subHeading,.navbar{
-    margin-left:104px;
-}
-.subHeading,.aboutHead{
-    margin-top:100px;
-}
-.subHeading{
-    font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 36px;
-line-height: 54px;
-
-/* identical to box height */
-text-transform: capitalize;
-
-/* Blue2 */
-color: #1B638B;
-}
-/* .aboutChild{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-} */
 .title{
     display: flex;
     align-items: center;
@@ -87,9 +64,53 @@ color: #1C445A;
 
 opacity: 0.8;
 }
+.aboutHead>img{
+    opacity: 0.1;
+    height: 400px;
+    position: relative;
+    right: 6vw;
+}
 .aboutGrandchild{
     display: flex;
     justify-content: space-evenly;
     margin: 40px 110px;
     align-items: center;
+}
+@media only screen and (max-width:768px){
+    .aboutHead{
+        height:200px;
+        margin-bottom: 40px;
+    }
+    .aboutHead>img{
+        height: 200px;
+        opacity: 0.1;
+    }
+    .heading{
+        font-size: 26px;
+        margin-left: 15px;
+    }
+    .aboutHr{
+        width: 60px;
+    }
+    .title>p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .description{
+        font-size: 12px;
+        width:73vw;
+        margin-right: 0;
+    }
+    .aboutGrandchild{
+        flex-direction: column;
+        margin:40px 15px ;
+    }
+    .aboutImage{
+       position: relative;
+       width: 100%;
+       margin-top: 10px;
+    }
+    .aboutParent{
+        width: 100%;
+    }
 }

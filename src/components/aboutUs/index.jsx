@@ -6,6 +6,7 @@ import concept from './src/concept.jpg'
 import styles from './src/aboutus.module.css'
 import Navbar from '../home/Navbar';
 import Contact from '../home/Contact';
+import headImage from './src/head.jpg'
  class About extends React.Component{
     render(){
         const aboutUs =[
@@ -32,6 +33,7 @@ import Contact from '../home/Contact';
                     <div className={styles.aboutHead}>
                         <p className={styles.heading}>About Us </p>
                         <hr className={styles.aboutHr}/>
+                        <img src={headImage} alt=""/>
                     </div>
                     {/* <p className={styles.subHeading}>About Us</p> */}
                     <div className={styles.aboutChild}>
@@ -40,19 +42,30 @@ import Contact from '../home/Contact';
                                 <div >
                                     {index%2 === 0 ? 
                                     <div className={styles.aboutGrandchild}>
-                                        <div>
+                                        <div className={styles.aboutParent}>
                                             <div className={styles.title}> <img src={line} alt="line"/> <p>{list.title}</p></div>
                                             <p className={styles.description}>{list.description}</p>
                                         </div>    
                                         <img src={list.image} alt="vision" className={styles.aboutImage}/>
                                     </div>:
-                                    <div className={styles.aboutGrandchild}>
+                                    <div>
+                                        {window.innerWidth<768?
+                                        <div className={styles.aboutGrandchild}>
+                                        <div className={styles.aboutParent}>
+                                            <div className={styles.title} >  <img src={line} alt="line" style={{marginLeft:'14px'}}/> <p> {list.title}</p> </div>
+                                            <p className={styles.description}>{list.description}</p>
+                                        </div> 
                                         <img src={list.image} alt="vision" className={styles.aboutImage}/>
-                                        <div>
+                                        </div>:
+                                        <div className={styles.aboutGrandchild}>
+                                        <img src={list.image} alt="vision" className={styles.aboutImage}/>
+                                        <div className={styles.aboutParent}>
                                             <div className={styles.title} >  <p style={{marginLeft:'51px'}}> {list.title}</p> <img src={line} alt="line" style={{marginLeft:'14px'}}/></div>
                                             <p className={styles.description}>{list.description}</p>
                                         </div>    
-                                    </div> }
+                                        </div>  }
+                                    </div>
+}
                                 </div>
                             )
                         }):null}

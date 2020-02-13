@@ -12,14 +12,14 @@ export default class Events extends React.Component{
         const events = [
             {
                 title:'Case Studies',
-                date:'23, March 2020',
+                date:'22, March 2020',
                 subevents:[{name:'Presentation of Solutions to the Problem Statement given by the Industry.'},
                 ],
                 image:case_studies
             },
             {
                 title:'PG Research Work Presentation',
-                date:'23, March 2020',
+                date:'22, March 2020',
                 subevents:[
                     {name:'Presentation of Research Work to a committee of veterans from discipline of Civil Engineering.'},
                 ],
@@ -27,14 +27,14 @@ export default class Events extends React.Component{
             },
             {
                 title:'Model Exhibition',
-                date:'23, March 2020',
+                date:'22, March 2020',
                 subevents:[
                     {name:'A problem statement will be given on which students will be supposed to create the model.'},],
                 image:model_exibition
             },
             {
                 title:'Guest Lectures',
-                date:'23, March 2020',
+                date:'22, March 2020',
                 subevents:[
                     {name:' A series of 6 lectures each of half hour covering all disciplines of Civil Engineering '},
                 ],

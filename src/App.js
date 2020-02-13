@@ -18,6 +18,14 @@ const Event = Loadable({
   loader:()=>import('./components/events/index'),
   loading:Loading
 })
+const Sponsors = Loadable({
+  loader:()=>import('./components/sponsors/index'),
+  loading:Loading
+})
+const Problem = Loadable({
+  loader:()=>import('./components/problems/index'),
+  loading:Loading
+})
 export default class App extends React.Component{
   render(){
     return(
@@ -27,6 +35,9 @@ export default class App extends React.Component{
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/about" component={About}/>
                 <Route exact path="/events" component={Event}/>
+                <Route exact path = "/sponsors" component={Sponsors}/>
+                <Route exact path = "/problems" component={Problem}/>
+
             </React.Fragment>
         </Switch>
       </BrowserRouter>

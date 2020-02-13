@@ -32,7 +32,7 @@ color: #1B638B;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.subject{
+/* .subject{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,15 +70,11 @@ font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 21px;
-/* identical to box height */
 margin: 0px 40px;
 text-transform: uppercase;
 border-style: none;
-
-/* Blue1 */
-
 color: #1C445A;
-}
+} */
 .hr{
     background: #1B638B;
 opacity: 0.08;
@@ -93,7 +89,8 @@ height: 2px;
     width: 1200px;
     margin-top: 90px;
 }
-.contactChild1>img{
+.logo{
+    cursor: pointer;
     width: 225.66px;
 height: 72px;
 }
@@ -123,8 +120,8 @@ color: #3788AA;
 }
 .description{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-between;
     font-family: Noto Sans;
     font-style: normal;
     font-weight: normal;
@@ -135,15 +132,22 @@ color: #3788AA;
     list-style: none;
     color: #1C445A;
     opacity: 0.8;
-    width:460px;
+    width: 400px;
     height: 109px;
+}
+.contactImage{
+    height: 16px;
+    width: 16px;
+    align-items: center;
+    margin-right: 5px;
 }
 .verticalHr{
     background: #1C445A;
 border-radius: 3px;
 width: 1px;
 margin:0 !important;
-height: 18vh;
+height: 35vh;
+border-radius: 2px;
 }
 
 .contactChild2{
@@ -152,32 +156,37 @@ height: 18vh;
     align-items: center;
     width:230px;
 }
+.contactGrandChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 .text{
     font-family: Noto Sans;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 22px;
+text-decoration: none;
 /* identical to box height */
-text-transform: none;
 cursor: pointer;
 /* Blue1 */
-
+margin:5px 0;
 color: #1C445A;
 }
-::placeholder{
+/* ::placeholder{
     font-family: Noto Sans;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 22px;
 text-align: center;
-/* identical to box height */
 text-transform: capitalize;
 margin-left:10px !important;
 
 color: rgba(0, 0, 0, 0.3);
-}
+} */
 @media only screen and (max-width:768px){
     .contactParent{
         margin:0 14px;
@@ -188,7 +197,7 @@ color: rgba(0, 0, 0, 0.3);
         font-size:20px;
         line-height: 30px;
     }
-    .query{
+    /* .query{
         font-size: 16px;
         line-height: 20px;
     }
@@ -219,23 +228,24 @@ color: rgba(0, 0, 0, 0.3);
     height: 38px;
     font-size: 12px;
     margin: 10px 0;
-    }
+    } */
     .hr{
     width:98%;
     margin-left: 0;
     height: 2px;
     }
     .contactChild{
-        width: 90%;
-        margin-left: 14px;
+        width: 100%;
+        margin-right: 14px;
+        margin-top: 37px;
     }
-    .contactChild1>img{
-        width:150px;
-        height:50px;
+    .logo{
+        width: 132px;
+        height: 41px;
     }
     .date{
-        font-size: 13px;
-        line-height: 16px;
+        font-size: 10px;
+        line-height: 15px;
         margin: 0 0 8px 37px;
     }
     .icon{
@@ -249,11 +259,14 @@ color: rgba(0, 0, 0, 0.3);
         height: 15vh;
     }
     .contactChild2{
-        width: 180px;
+        width: auto;
     }
     .text{
-        font-size: 13px;
-        line-height: 16px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .contactGrandChild{
+        margin-left:12px;
     }
 
 }

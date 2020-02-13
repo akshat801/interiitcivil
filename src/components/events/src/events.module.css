@@ -29,12 +29,15 @@
     border-style: none;
     margin-left:10px;
 }
-
 .eventsChild{
     display: flex;
     justify-content: space-between;
     margin:36px 120px;
     background: rgba(196, 196, 196, 0.15)
+}
+.eventsHead>img{
+    position: relative;
+    right: 6vw;
 }
 .subEvent{
     margin:30px 78px 30px 42px;
@@ -73,6 +76,8 @@ font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 21px;
+text-decoration: none;
+padding: 5px 10px;
 text-transform: uppercase;
 cursor: pointer;
 border-style: none;
@@ -80,4 +85,44 @@ width: 234px;
 height: 36px;
 /* Blue1 */
 color: #1C445A;
+}
+@media only screen and (max-width:768px){
+    .eventsHead{
+        height:200px;
+        margin-bottom: 40px;
+    }
+    .eventsHead>img{
+        height: 200px;
+    }
+    .heading{
+        font-size: 26px;
+        margin-left: 15px;
+    }
+    .eventsHr{
+        width: 60px;
+    }
+    .eventsChild{
+        margin:30px 15px;
+        flex-direction: column;
+    }
+    .subEvent{
+        margin:10px 30px 10px 20px;
+    }
+    .eventTitle{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .eventDescription{
+        font-size: 12px;
+    }
+    .readProblem{
+        width: 120px;
+        font-size:8px;
+        height: 26px;
+    }
+    .eventsImage{
+        position: relative;
+        width: 100%;
+        opacity: 0.85;
+    }   
 }
