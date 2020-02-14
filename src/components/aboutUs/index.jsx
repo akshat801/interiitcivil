@@ -52,7 +52,7 @@ import headImage from './src/head.jpg'
                                         {window.innerWidth<768?
                                         <div className={styles.aboutGrandchild}>
                                         <div className={styles.aboutParent}>
-                                            <div className={styles.title} >  <img src={line} alt="line" style={{marginLeft:'14px'}}/> <p> {list.title}</p> </div>
+                                            <div className={styles.title} >  <img src={line} alt="line" /> <p> {list.title}</p> </div>
                                             <p className={styles.description}>{list.description}</p>
                                         </div> 
                                         <img src={list.image} alt="vision" className={styles.aboutImage}/>

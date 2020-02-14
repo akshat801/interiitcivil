@@ -37,7 +37,7 @@
 }
 .eventsHead>img{
     position: relative;
-    right: 6vw;
+    right: -1vw;
 }
 .subEvent{
     margin:30px 78px 30px 42px;
@@ -48,7 +48,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 28px;
 line-height: 42px;
-margin-top: 0;
+margin: 0;
 /* identical to box height */
 text-transform: capitalize;
 
@@ -103,7 +103,7 @@ color: #1C445A;
     }
     .eventsChild{
         margin:30px 15px;
-        flex-direction: column;
+        flex-direction:  column-reverse;
     }
     .subEvent{
         margin:10px 30px 10px 20px;
@@ -125,4 +125,17 @@ color: #1C445A;
         width: 100%;
         opacity: 0.85;
     }   
+}
+@media only screen and (min-width:1600px){
+    .eventTitle{
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .eventDescription{
+        font-size: 20px;
+    }
+    .readProblem{
+        font-size: 20px;
+        line-height: 24px;
+    }
 }

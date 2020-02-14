@@ -1,57 +1,70 @@
 .eventParent{
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    flex-wrap:wrap;
+    align-items: center;
 }
 .eventChild{
     display: flex;
-    margin:23px 46px 23px 0px;
-    background: rgba(251, 190, 74, 0.05);
-    mix-blend-mode: normal;
-    border: 1px solid rgba(251, 190, 74, 0.3);
-    box-sizing: border-box;
-    border-radius: 2px;
+    justify-content: space-between;
+    width: 45%;
+    margin-right: 24px;
+    margin-bottom: 24px;
+background: rgba(251, 190, 74, 0.05);
+mix-blend-mode: multiply;
+border: 1px solid rgba(251, 190, 74, 0.3);
+box-sizing: border-box;
+border-radius: 2px;
 }
 .eventChild1{
-    width: 260px;
-    padding-top: 13px;
-    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 24px;
 }
-
+.eventDate{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
 .eventTitle{
     font-family: Poppins;
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 30px;
-/* identical to box height */
 
+/* identical to box height */
 text-transform: capitalize;
 
 /* Blue3 */
-
 color: #3788AA;
 }
-.eventDate{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 250px;
+.eventDescription{
+
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+
+/* or 21px */
+
+color: rgba(28, 68, 90, 0.6);
 }
 .date{
     font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-    
-    text-transform: capitalize;
-    
-    /* Blue1 */
-    
-    color: #1C445A;
-    opacity: 0.5;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+/* identical to box height */
+text-transform: capitalize;
+
+/* Blue1 */
+color: #1C445A;
+opacity: 0.5;
 }
 .learn{
     font-family: Poppins;
@@ -59,64 +72,63 @@ font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 21px;
-/* identical to box height */
-text-decoration: none;
-text-transform: capitalize;
 
+/* identical to box height */
+text-transform: capitalize;
+text-decoration: none;
 /* Blue1 */
 color: #1C445A;
-cursor: pointer;
 }
-.subEvents{
-    margin-right: 20px;
-font-family: Noto Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 22px;
-/* identical to box height */
-
-text-transform: capitalize;
-
-color: rgba(28, 68, 90, 0.6);
+.eventImage{
+    width:90%;
+    height: 200px;
 }
-/* .eventChild2{
-    height:204.94px !important;
-} */
 @media only screen and (max-width:768px){
-    .eventParent{
-        flex-direction: column;
-    }
     .eventChild{
-        margin: 23px 14px 23px 0px;
-        width: fit-content;
-    }
-    .eventChild1{
-        width: 46vw;
-        padding-left: 14px;
+        width: 100%;
     }
     .eventTitle{
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height:24px ;
     }
-    .subEvents{
-        font-size: 10px;
+    .eventChild1{
+        padding: 0 10px;
+    }
+    .eventDescription{
+        font-size: 9px;
         line-height: 13px;
     }
-    .eventDate{
-        width: 90%;
-    }
     .date{
-        font-size: 9px;
-        line-height: 16px;
+        font-size: 10px;
+        line-height: 11px;
     }
     .learn{
         font-size: 9px;
-        line-height: 15px;
+        line-height: 13px;
     }
-    .eventChild2{
-        width:40vw;
-
-
+    .eventImage{
+        height:118px;
+        width: 47%;
+    }
+}
+@media only screen and (min-width:1600px){
+    .eventTitle{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .eventDescription{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .date{
+        font-size: 22px;
+        line-height: 18px;
+    }
+    .learn{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .eventImage{
+        height:240px;
     }
 }

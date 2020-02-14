@@ -26,7 +26,7 @@ export default class AboutUs extends React.Component{
                      <div className={styles.aboutChild1}>
                         {aboutUs ? aboutUs.map((list,index)=>{
                             return(
-                                <div>
+                                <div className={styles.aboutGrand}>
                                     <div className={styles.title}> <img src={line} alt="line"/> <p>{list.title}</p></div>
                                     <p className={styles.description}>{list.description}</p>
                                     <Link className={styles.more} to='/about'>read more</Link>
