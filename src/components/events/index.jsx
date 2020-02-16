@@ -48,7 +48,9 @@ export default class Events extends React.Component{
                             <div className={styles.subEvent}>
                                 <p className={styles.eventTitle}>{list.title}</p>
                                 <p className={styles.eventDescription}>{list.description}</p>
+                                {list.title ==="model exhibition"||list.title ==="guest lectures"?null:
                                 <Link className={styles.readProblem} to='/problems'>read problem statement</Link>    
+                            }
                             </div>
                             <div>
                                 <img className={styles.eventsImage} src={list.image} alt=""/>

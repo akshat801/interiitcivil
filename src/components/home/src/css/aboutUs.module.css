@@ -52,6 +52,12 @@ opacity: 0.8;
     justify-content: center;
     align-items: center;
 }
+.theme{
+color: #1C445A;
+font-size: 16px;
+font-weight: bold;
+margin-left: 56px;
+}
 .more{
     font-family: Poppins;
 font-style: normal;
@@ -72,7 +78,7 @@ color: #1C445A;
         font-size: 16px;
         line-height: 18px;
     }
-    .description{
+    .description,.theme{
         font-size: 13px;
         line-height: 16px;
     }
@@ -91,7 +97,7 @@ color: #1C445A;
         font-size: 30px;
         line-height: 36px;
     }
-    .description{
+    .description,.theme{
         font-size: 20px;
         line-height: 28px;
     }

@@ -49,6 +49,12 @@ align-items: center;
 
     color: #3788AA;
 }
+.theme{
+    color: #1C445A;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 56px;
+    }
 .description{
     font-family: Noto Sans;
 font-style: normal;
@@ -86,7 +92,7 @@ opacity: 0.8;
         opacity: 0.1;
     }
     .heading{
-        font-size: 26px;
+        font-size: 20px;
         margin-left: 15px;
     }
     .aboutHr{
@@ -97,7 +103,7 @@ opacity: 0.8;
         font-size: 18px;
         line-height: 20px;
     }
-    .description{
+    .description,.theme{
         font-size: 12px;
         width:73vw;
         margin-right: 0;
@@ -120,7 +126,7 @@ opacity: 0.8;
         font-size: 30px;
         line-height: 42px;
     }
-    .description{
+    .description,.theme{
         font-size: 20px;
     }
 }

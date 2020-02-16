@@ -12,13 +12,13 @@ export default class Events extends React.Component{
         const events = [
             {
                 title:'Case Studies',
-                date:'22, March 2020',
+                date:'21, March 2020',
                 description:'Presentation of Solutions to the Problem Statement given by the Industry.',
                 image:case_studies
             },
             {
                 title:'PG Research Work Presentation',
-                date:'22, March 2020',
+                date:'21, March 2020',
                 description:'Presentation of Research Work to a committee of veterans from discipline of Civil Engineering.',
                 image:pg_research
             },
@@ -30,7 +30,7 @@ export default class Events extends React.Component{
             },
             {
                 title:'Guest Lectures',
-                date:'22, March 2020',
+                date:'21 & 22, March 2020',
                 description:' A series of 6 lectures each of half hour covering all disciplines of Civil Engineering ',
                 image:lectures
             }
