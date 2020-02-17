@@ -37,10 +37,13 @@
 }
 .eventsHead>img{
     position: relative;
-    right: 6vw;
+    right: -1vw;
 }
 .subEvent{
-    margin:30px 78px 30px 42px;
+    margin: 0px 78px 0px 42px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
 }
 .eventTitle{
     font-family: Poppins;
@@ -48,7 +51,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 28px;
 line-height: 42px;
-margin-top: 0;
+margin: 0;
 /* identical to box height */
 text-transform: capitalize;
 
@@ -68,6 +71,9 @@ line-height: 160%;
 color: #1B638B;
 }
 .readProblem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #FBBE4A;
 border-radius: 2px;
 text-align: center;
@@ -77,13 +83,11 @@ font-weight: 500;
 font-size: 14px;
 line-height: 21px;
 text-decoration: none;
-padding: 5px 10px;
 text-transform: uppercase;
 cursor: pointer;
 border-style: none;
 width: 234px;
 height: 36px;
-/* Blue1 */
 color: #1C445A;
 }
 @media only screen and (max-width:768px){
@@ -95,15 +99,15 @@ color: #1C445A;
         height: 200px;
     }
     .heading{
-        font-size: 26px;
-        margin-left: 15px;
+        font-size: 23px;
+        margin-left: 14px;
     }
     .eventsHr{
         width: 60px;
     }
     .eventsChild{
         margin:30px 15px;
-        flex-direction: column;
+        flex-direction:  column-reverse;
     }
     .subEvent{
         margin:10px 30px 10px 20px;
@@ -125,4 +129,19 @@ color: #1C445A;
         width: 100%;
         opacity: 0.85;
     }   
+}
+@media only screen and (min-width:1600px){
+    .eventTitle{
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .eventDescription{
+        font-size: 20px;
+    }
+    .readProblem{
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 24px;
+    }
 }

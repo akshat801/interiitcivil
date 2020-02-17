@@ -141,3 +141,8 @@
       }
 
 }
+@media only screen and  (min-width:1600px){
+    .navChild{
+        font-size: 22px;
+    }
+}

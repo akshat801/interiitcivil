@@ -16,8 +16,9 @@ flex:1;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 36px;
-    margin-left: 8px;
+    line-height: 26px;
+    margin-left: 8px !important ;
+    margin: 10px 0;
     /* identical to box height */
 
     text-transform: capitalize;
@@ -25,6 +26,10 @@ flex:1;
     /* Blue3 */
 
     color: #3788AA;
+}
+
+.aboutGrand{
+    margin:17px 0;
 }
 .description{
     font-family: Noto Sans;
@@ -34,7 +39,8 @@ font-size: 16px;
 line-height: 170%;
 margin-left: 56px;
 /* or 27px */
-
+margin-top: 0;
+margin-bottom: 10px;
 text-align: justify;
 
 color: #1C445A;
@@ -45,6 +51,12 @@ opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.theme{
+color: #1C445A;
+font-size: 16px;
+font-weight: bold;
+margin-left: 56px;
 }
 .more{
     font-family: Poppins;
@@ -64,9 +76,9 @@ color: #1C445A;
 @media only screen and (max-width:768px){
     .title>p{
         font-size: 16px;
-        line-height: 20px;
+        line-height: 18px;
     }
-    .description{
+    .description,.theme{
         font-size: 13px;
         line-height: 16px;
     }
@@ -78,5 +90,19 @@ color: #1C445A;
     }
     .more{
         font-size: 11px;
+    }
+}
+@media only screen and  (min-width:1600px){
+    .title>p{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .description,.theme{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .more{
+        font-size: 20px;
+        line-height: 26px;
     }
 }

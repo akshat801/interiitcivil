@@ -16,7 +16,7 @@ class Main extends React.Component{
                             <hr className={styles.hr}/>
                         </div>
                     </div>
-                    <div className={styles.description}>A 2 day sprint to test your Civil Engineering skills. Also some 2 liner- description like this</div>
+                    <div className={styles.description}>The very first and exclusive Inter IIT Meetup for Civil Engineering enthusiasts.</div>
                     <div>
                         <button className={styles.more}>Learn More
                         <img src={arrow} alt="arrow" style={{width:'12px',height:'12px',marginLeft:'4px'}}/>

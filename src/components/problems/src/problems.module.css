@@ -1,45 +1,166 @@
-.parentDiv{
+
+.problemHead{
+    width:100%;
+    height:400px;
+    background: #1C445A;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+        justify-content: flex-start;
+    }
+ .heading{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        margin-left:104px;
+        line-height: 150%;
+        /* identical to box height, or 72px */
+        text-transform: uppercase;
+        
+        /* Yellow1 */
+        color: #FBBE4A;   
+    }
+    .problemHr{
+        background: #FBBE4A;
+        width: 126px;
+        height: 2px;
+        margin: 0;
+        border-style: none;
+        margin-left:10px;
+    }
+.problemParent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:100px 0;
+    margin-left:104px !important;
+}
+.problemChild{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(251, 190, 74, 0.05);
+mix-blend-mode: multiply;
+border: 1px solid rgba(251, 190, 74, 0.3);
+box-sizing: border-box;
+border-radius: 2px;
+width: 48%;
+margin-right:24px;
+margin-bottom:30px;
+}
+.problemChild1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1B638B;
+    justify-content: space-around;
+    padding:0 24px;
 }
-.mainDiv{
-    background-color: blueviolet;
-    color: #fff;
-    border-radius: 2px;
-    border-style: none;
-    font-size: 30px;
-    text-transform: uppercase;
-    width: 400px;
-    height: 60px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    .problemTitle{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+
+/* identical to box height */
+text-transform: capitalize;
+
+/* Blue3 */
+color: #3788AA;
 }
-.gotoHome{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    color: #1C445A;
-    opacity: 0.8;
-    border-radius: 2px;
-    border-style: none;
-    font-size: 30px;
-    width: 400px;
-    height: 60px;
-    text-transform: uppercase;
-    margin: 20px;
-    text-align: center;
-    text-decoration: none;
+.problemDescription{
+
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+
+/* or 21px */
+
+color: rgba(28, 68, 90, 0.6);
+}
+/* .date{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+
+text-transform: capitalize;
+
+color: #1C445A;
+opacity: 0.5;
+} */
+.downloadProblem{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+width: fit-content;
+/* identical to box height */
+text-transform: capitalize;
+text-decoration: none;
+/* Blue1 */
+color: #1C445A;
+}
+.problemImage{
+    width:50%;
+    height: 200px;
 }
 @media only screen and (max-width:768px){
-    .mainDiv,.gotoHome{
-        width: 230px;
+    .problemParent{
+        margin:50px 14px !important;
+    }
+    .problemChild{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom:25px;
+        flex-direction: column-reverse;
+    }
+    .problemChild1{
+        padding: 10px 10px;
+    }
+    .problemTitle{
+        font-size: 18px;
+    }
+    .problemDescription{
+        font-size: 10px;
+    }
+    .downloadProblem{
+        font-size: 10px;
+    }
+    .problemImage{
+        width: 100%;
+        height: 250px;
+    }
+    .problemHead{
+        height:200px;
+        margin-bottom: 40px;
+    }
+    .heading{
+        font-size: 23px;
+        margin-left: 14px;
+    }
+    .problemHr{
+        width: 60px;
+    }
+
+}
+@media only screen and (min-width:1600px){
+    .problemTitle{
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .problemDescription{
         font-size: 20px;
+    }
+    .downloadProblem{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .problemImage{
+        height: 250px;
     }
 }

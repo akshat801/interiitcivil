@@ -12,32 +12,26 @@ export default class Events extends React.Component{
         const events = [
             {
                 title:'Case Studies',
-                date:'22, March 2020',
-                subevents:[{name:'Presentation of Solutions to the Problem Statement given by the Industry.'},
-                ],
+                date:'21, March 2020',
+                description:'Presentation of Solutions to the Problem Statement given by the Industry.',
                 image:case_studies
             },
             {
                 title:'PG Research Work Presentation',
-                date:'22, March 2020',
-                subevents:[
-                    {name:'Presentation of Research Work to a committee of veterans from discipline of Civil Engineering.'},
-                ],
+                date:'21, March 2020',
+                description:'Presentation of Research Work to a committee of veterans from discipline of Civil Engineering.',
                 image:pg_research
             },
             {
                 title:'Model Exhibition',
                 date:'22, March 2020',
-                subevents:[
-                    {name:'A problem statement will be given on which students will be supposed to create the model.'},],
+                description:'A problem statement will be given on which students will be supposed to create the model.',
                 image:model_exibition
             },
             {
                 title:'Guest Lectures',
-                date:'22, March 2020',
-                subevents:[
-                    {name:' A series of 6 lectures each of half hour covering all disciplines of Civil Engineering '},
-                ],
+                date:'21 & 22, March 2020',
+                description:' A series of 6 lectures each of half hour covering all disciplines of Civil Engineering ',
                 image:lectures
             }
         ]
@@ -48,19 +42,13 @@ export default class Events extends React.Component{
                     <div className={styles.eventChild}>
                         <div className={styles.eventChild1}>
                             <div className={styles.eventTitle}>{list.title}</div>
-                            <div>
-                                {list.subevents.map((obj,address)=>{
-                                    return(
-                                        <div className={styles.subEvents}>{obj.name}</div>
-                                    )
-                                })}
-                            </div>
+                            <div className={styles.eventDescription}>{list.description} </div>
                             <div className={styles.eventDate}>
                                 <p className={styles.date}>{list.date}</p>
                                 <Link className={styles.learn} to='/events'>LEARN MORE</Link>
                             </div>
                         </div>
-                            <img src={list.image} alt="fgh" className={styles.eventChild2}/>
+                            <img src={list.image} alt="fgh" className={styles.eventImage}/>
                     </div>
                 )}) :null}
             </div>

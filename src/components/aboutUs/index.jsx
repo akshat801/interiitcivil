@@ -12,7 +12,7 @@ import headImage from './src/head.jpg'
         const aboutUs =[
             {
                 title:'our vision',
-                description:'The IIT Roorkee Civil Conclave aims to lighten the spark that lies within the heart of all feisty civil engineers by appetizing their will with a meetup which would incorporate "Innovation and Technical Soundness". The objective is to engender ingenuity and come up with legitimate solutions to problems persisting across the industry.',
+                description:'The IIT Roorkee Civil Conclave aims to lighten the spark that lies within the heart of all feisty civil engineers by appetizing their will with a meetup which would incorporate "Innovative and Technical” skills. The objective is to engender ingenuity and come up with legitimate solutions to problems persisting across the industry. The Conclave is primarily aimed at boosting technical expertise of the students by serving as an interface to the current industrial scenario. ',
                 image:vision
             },
             {
@@ -23,7 +23,7 @@ import headImage from './src/head.jpg'
             },
             {
                 title:'our theme',
-                description:"'Unveiling The Flume to Future' Future is an entity at the back of each person's mind. Today when we look at the future of the world around us the view is blurred with problems ranging from depletion of resources to the dearth of cutting edge technologies in various areas. Infrastructure is a key component of the modern world and Civil engineering has served as the basis for its development. The need of hour is to bring a revolution in the way we approach and analyse various problems in this field. This Conclave aims to lay a path to a brighter future by engaging brilliant minds across the country to come out with the required revolutionary approach in the field of Civil Engineering.",
+                description:"Future is an entity at the back of each person's mind. Today when we look at the future of the world around us the view is blurred with problems ranging from depletion of resources to the dearth of cutting edge technologies in various areas. Infrastructure is a key component of the modern world and Civil engineering has served as the basis for its development. The need of hour is to bring a revolution in the way we approach and analyse various problems in this field. This Conclave aims to lay a path to a brighter future by engaging brilliant minds across the country to come out with the required revolutionary approach in the field of Civil Engineering.",
                 image:theme
             }
         ]
@@ -44,6 +44,7 @@ import headImage from './src/head.jpg'
                                     <div className={styles.aboutGrandchild}>
                                         <div className={styles.aboutParent}>
                                             <div className={styles.title}> <img src={line} alt="line"/> <p>{list.title}</p></div>
+                                    {list.title==="our theme"? <div className={styles.theme}>"Unveiling The Flume to Future"</div>:null }
                                             <p className={styles.description}>{list.description}</p>
                                         </div>    
                                         <img src={list.image} alt="vision" className={styles.aboutImage}/>
@@ -52,7 +53,7 @@ import headImage from './src/head.jpg'
                                         {window.innerWidth<768?
                                         <div className={styles.aboutGrandchild}>
                                         <div className={styles.aboutParent}>
-                                            <div className={styles.title} >  <img src={line} alt="line" style={{marginLeft:'14px'}}/> <p> {list.title}</p> </div>
+                                            <div className={styles.title} >  <img src={line} alt="line" /> <p> {list.title}</p> </div>
                                             <p className={styles.description}>{list.description}</p>
                                         </div> 
                                         <img src={list.image} alt="vision" className={styles.aboutImage}/>
