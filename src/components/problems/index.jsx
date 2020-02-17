@@ -4,35 +4,35 @@ import styles from './src/problems.module.css'
 import Navbar from '../home/Navbar'
 import Contact from '../home/Contact'
 import image from './src/index.jpg'
-import Problem from './src/Problem-statement-2019.pdf'
+import Problem from './src/Tinker the Wheel.pdf'
 
 export default class Problems extends React.Component{
     render(){
         const problems = [
             {
-                title:'Case 1',
+                title:'Tinker the Water Wheel',
                 date:'21, March 2020',
-                description:'Presentation of Solutions to the Problem Statement given by the Industry.',
+                description:'Waterwheel, a mechanical device for tapping the energy of running or falling water by means of a set of paddles mounted around a wheel. The force of the moving water is exerted against the paddles, and the consequent rotation of the wheel is transmitted to machinery via the shaft of the wheel. Design innovative and most efficient water wheel both in terms of efficiency and feasibility.',
                 image:image
             },
-            {
-                title:'Case 2',
-                date:'21, March 2020',
-                description:'Presentation of Research Work to a committee of veterans from discipline of Civil Engineering.',
-                image:image
-            },
-            {
-                title:'Case 3',
-                date:'22, March 2020',
-                description:'A problem statement will be given on which students will be supposed to create the model.',
-                image:image
-            },
-            {
-                title:'Case 4',
-                date:'21 & 22, March 2020',
-                description:' A series of 6 lectures each of half hour covering all disciplines of Civil Engineering ',
-                image:image
-            }
+            // {
+            //     title:'Case 2',
+            //     date:'21, March 2020',
+            //     description:'Presentation of Research Work to a committee of veterans from discipline of Civil Engineering.',
+            //     image:image
+            // },
+            // {
+            //     title:'Case 3',
+            //     date:'22, March 2020',
+            //     description:'A problem statement will be given on which students will be supposed to create the model.',
+            //     image:image
+            // },
+            // {
+            //     title:'Case 4',
+            //     date:'21 & 22, March 2020',
+            //     description:' A series of 6 lectures each of half hour covering all disciplines of Civil Engineering ',
+            //     image:image
+            // }
         ]
         return(
             <div>

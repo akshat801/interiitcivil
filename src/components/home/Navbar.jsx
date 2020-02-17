@@ -19,7 +19,7 @@ export default class Navbar extends React.Component{
 
     }
     render(){
-        const nav = [{name:'home',url:'/'},{name:'about us',url:'/about'},{name:'events',url:'/events'},{name:'sponsors',url:'/sponsors'},{name:'problem statement',url:'/problems'}]
+        const nav = [{name:'home',url:'/'},{name:'about us',url:'/about'},{name:'events',url:'/events'},{name:'sponsors',url:'/sponsors'}]
         return(
             <div>
         <div className={styles.navParentDiv}>
