@@ -17,11 +17,11 @@ class Main extends React.Component{
                         </div>
                     </div>
                     <div className={styles.description}>The very first and exclusive Inter IIT Meetup for Civil Engineering enthusiasts.</div>
-                    <div>
+                    {/* <div>
                         <button className={styles.more}>Learn More
                         <img src={arrow} alt="arrow" style={{width:'12px',height:'12px',marginLeft:'4px'}}/>
                         </button>
-                    </div>
+                    </div> */}
                     <div className={styles.note}>
                         Problem Statements are uploaded. <Link style={{color:'#FBBE4A',cursor:'pointer',textDecoration:'none'}} to='/problems'>Click to Download</Link>    
                     </div>

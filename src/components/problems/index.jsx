@@ -44,14 +44,26 @@ export default class Problems extends React.Component{
             <div className={styles.problemParent}>
                 {problems?problems.map((list,index)=>{
                 return(
-                    <div className={styles.problemChild}>
-                        <div className={styles.problemChild1}>
-                            <div className={styles.problemTitle}>{list.title}</div>
-                            <div className={styles.problemDescription}>{list.description} </div>
-                             <a href={Problem} className={styles.downloadProblem} download="problem">DOWNLOAD PROBLEM</a>
+                    <div className={styles.eventsChild}>
+                            <div className={styles.subEvent}>
+                                <p className={styles.eventTitle}>{list.title}</p>
+                                <p className={styles.eventDescription}>{list.description}</p>
+                                
+                                <a href={Problem} className={styles.readProblem} download="problem">DOWNLOAD PROBLEM</a>
+                              
+                            </div>
+                            <div>
+                                <img className={styles.eventsImage} src={list.image} alt=""/>
+                            </div>
                         </div>
-                            <img src={list.image} alt="fgh" className={styles.problemImage}/>
-                    </div>
+                    // <div className={styles.problemChild}>
+                    //     <div className={styles.problemChild1}>
+                    //         <div className={styles.problemTitle}>{list.title}</div>
+                    //         <div className={styles.problemDescription}>{list.description} </div>
+                    //          <a href={Problem} className={styles.downloadProblem} download="problem">DOWNLOAD PROBLEM</a>
+                    //     </div>
+                    //         <img src={list.image} alt="fgh" className={styles.problemImage}/>
+                    // </div>
                 )}) :null}
             </div>
             <Contact/>
