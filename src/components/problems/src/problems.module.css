@@ -31,6 +31,7 @@
 }
 .eventsChild{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin:36px 120px;
     background: rgba(196, 196, 196, 0.15)
@@ -43,7 +44,7 @@
     margin: 0px 78px 0px 42px;
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content: space-around;
 }
 .eventTitle{
     font-family: Poppins;
@@ -143,5 +144,8 @@ color: #1C445A;
         height: 50px;
         font-size: 20px;
         line-height: 24px;
+    }
+    .eventsImage{
+        width:400px
     }
 }

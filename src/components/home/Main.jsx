@@ -1,6 +1,6 @@
 import React from 'react';
 import  styles from './src/css/main.module.css'
-import arrow from './src/img/next.png'
+// import arrow from './src/img/next.png'
 import theme from './src/img/theme.jpg'
 import { Link} from 'react-router-dom';
 class Main extends React.Component{
