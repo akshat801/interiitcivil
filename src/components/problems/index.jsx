@@ -7,6 +7,8 @@ import image from './src/index.jpg'
 import Problem from './src/Tinker the Wheel.pdf'
 import StructureProblem from './src/Structural Design Dilemma.pdf'
 import structureImage from './src/structure.png' 
+import NamamiGanga from './src/Namami Gange Problem Statement.pdf'
+import NamamiImage from './src/Caricature.jpg'
 export default class Problems extends React.Component{
     render(){
         const problems = [
@@ -24,12 +26,13 @@ export default class Problems extends React.Component{
                 image:structureImage,
                 problem:StructureProblem
             },
-            // {
-            //     title:'Case 3',
-            //     date:'22, March 2020',
-            //     description:'A problem statement will be given on which students will be supposed to create the model.',
-            //     image:image
-            // },
+            {
+                title:'Rejuvenating River Ganga',
+                date:'21, March 2020',
+                description:'In India, the water of River Ganga is treated with utmost reverence. This is because of the cultural as well functional significance of the river. It is the life support system for innumerable organisms in our country. This reverence  has not, however, prevented over-use, abuse, and pollution of the river. The rise of this problem in the last few years has made the Government of India take several initiatives for rejuvenation of the river. From Engineering point of view one principal problem highlighted has been "Sludge Management".This Case Study invites participating institutes to come up with a technology for efficient use of sludge. Let us all give our valuable inputs and help "Rejuvenate River Ganga"',
+                image:NamamiImage,
+                problem:NamamiGanga
+            },
             // {
             //     title:'Case 4',
             //     date:'21 & 22, March 2020',
