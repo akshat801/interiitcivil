@@ -11,7 +11,7 @@ class Main extends React.Component{
                     <div className={styles.collage}>IIT Roorkee</div>
                     <div className={styles.heading}>Civil Conclave 2020</div>
                     <div className={styles.date}>
-                        <div>21-22 March, 2020</div>
+                        <div>7-8 November, 2020</div>
                         <div>
                             <hr className={styles.hr}/>
                         </div>
