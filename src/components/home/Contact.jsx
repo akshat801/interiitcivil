@@ -28,7 +28,7 @@ export default class Contact extends React.Component{
                 <div className={styles.contactChild}>
                     <div className={styles.contactChild1}>
                         <Link to='/'><img src={logo} alt="" className={styles.logo}/></Link>
-                        <p className={styles.date}>21 - 22 March, 2020</p>
+                        <p className={styles.date}>7 - 8 November, 2020</p>
                         <div className={styles.icon}>
                             <a href="https://www.facebook.com/civilconclave.iitr/?modal=admin_todo_tour" target='new'><img src={fb} alt="ald"/></a>
                             {/* <a href='https://www.facebook.com/civilconclave.iitr/?modal=admin_todo_tour'><img src={web} alt="ald"/></a> */}
