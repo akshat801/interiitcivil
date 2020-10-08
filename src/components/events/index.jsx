@@ -25,12 +25,12 @@ export default class Events extends React.Component{
                 image:pg,
                 problem:Problem2
             },
-            {
-                title:'model exhibition',
-                description:'The objective of this event is to encourage students to design and build a civil engineering model by applying their knowledge and creativity. The Model should be economically viable, technologically feasible and most importantly sustainable. A problem statement will be given on which students will be supposed to create the model. Judgment will be done by IIT professors based on the discipline of the problem statement.The winners will be provided with Medals,Certificates, Trophy and Goodies.',
-                image:model,
-                problem:Problem1
-            },
+            // {
+            //     title:'model exhibition',
+            //     description:'The objective of this event is to encourage students to design and build a civil engineering model by applying their knowledge and creativity. The Model should be economically viable, technologically feasible and most importantly sustainable. A problem statement will be given on which students will be supposed to create the model. Judgment will be done by IIT professors based on the discipline of the problem statement.The winners will be provided with Medals,Certificates, Trophy and Goodies.',
+            //     image:model,
+            //     problem:Problem1
+            // },
             {
                 title:'guest lectures',
                 description:'A series of 6 lectures each of half hour covering all disciplines of Civil Engineering by eminent speakers who are Industry leaders today. Guest lectures will be open for all the students and will be compulsory for all contingents to attend.',

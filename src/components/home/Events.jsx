@@ -22,12 +22,12 @@ export default class Events extends React.Component{
                 description:'Presentation of Research Work to a committee of veterans from discipline of Civil Engineering.',
                 image:pg_research
             },
-            {
-                title:'Model Exhibition',
-                date:'8, November 2020',
-                description:'A problem statement will be given on which students will be supposed to create the model.',
-                image:model_exibition
-            },
+            // {
+            //     title:'Model Exhibition',
+            //     date:'8, November 2020',
+            //     description:'A problem statement will be given on which students will be supposed to create the model.',
+            //     image:model_exibition
+            // },
             {
                 title:'Guest Lectures',
                 date:'7 & 8, November 2020',
