@@ -16,10 +16,7 @@ class Main extends React.Component {
           </div>
           <div className={styles.description}>
             The very first and exclusive Inter IIT Meetup for Civil Engineering
-            enthusiasts having events with cash prize of about{" "}
-            <strong>
-              <u>INR 1,50,000/-</u>
-            </strong>
+            enthusiasts.
           </div>
           {/* <div>
                         <button className={styles.more}>Learn More

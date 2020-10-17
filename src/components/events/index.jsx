@@ -14,14 +14,13 @@ export default class Events extends React.Component {
   render() {
     const events = [
       {
-        title: "Case Studies (Cash Prize INR 1,25,000/-)",
+        title: "Case Studies",
         description:
           "This incorporates the Presentation of Solutions to the Problem Statement given by the Industry. A team from each IIT will have a span of a month to prepare and come up with the Innovative and Sustainable Solution to the Problem Statement. The judging criteria will be decided by the concerned authority from the industry itself. The winners will be provided with Medals,Certificates, Trophy and Goodies.",
         image: Case,
       },
       {
-        title:
-          "UG, PG & PhD Research Work Presentation (Cash Prize INR 25,000/-)",
+        title: "UG, PG & PhD Research Work Presentation",
         description:
           "Each Contingent from each IIT will consist of members of PG and Ph.D students who will be presenting their Research Work In front of the committee consisting of veterans from every discipline of Civil Engineering. The Best Research Paper Work Award will be given in each discipline.",
         image: pg,
