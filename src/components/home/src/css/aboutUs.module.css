@@ -1,108 +1,112 @@
-.aboutParent{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* opacity: 0.05; */
+.aboutParent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* opacity: 0.05; */
 }
-.aboutChild1,.aboutChild2{
-flex:1;
+.aboutChild1,
+.aboutChild2 {
+  flex: 1;
 }
-.title{
-    display: flex;
-    align-items: center;   
+.title {
+  display: flex;
+  align-items: center;
 }
-.title>p{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
+.title > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  margin-left: 8px !important ;
+  margin: 10px 0;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  /* Blue3 */
+
+  color: #3788aa;
+}
+
+.aboutGrand {
+  margin: 17px 0;
+}
+.description {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;
+  margin-left: 56px;
+  /* or 27px */
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: justify;
+
+  color: #1c445a;
+
+  opacity: 0.8;
+}
+.aboutChild2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.theme {
+  color: #1c445a;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 56px;
+}
+.more {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
+  /* identical to box height, or 24px */
+
+  text-align: justify;
+  margin-left: 56px;
+  cursor: pointer;
+  /* Blue1 */
+  text-transform: uppercase;
+  color: #1c445a;
+}
+@media only screen and (max-width: 768px) {
+  .title > p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .description,
+  .theme {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .title,
+  .description {
+    margin-right: 14px;
+  }
+  .aboutChild2 {
+    display: none;
+  }
+  .more {
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .title > p {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .description,
+  .theme {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .more {
+    font-size: 20px;
     line-height: 26px;
-    margin-left: 8px !important ;
-    margin: 10px 0;
-    /* identical to box height */
-
-    text-transform: capitalize;
-
-    /* Blue3 */
-
-    color: #3788AA;
-}
-
-.aboutGrand{
-    margin:17px 0;
-}
-.description{
-    font-family: Noto Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 170%;
-margin-left: 56px;
-/* or 27px */
-margin-top: 0;
-margin-bottom: 10px;
-text-align: justify;
-
-color: #1C445A;
-
-opacity: 0.8;
-}
-.aboutChild2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.theme{
-color: #1C445A;
-font-size: 16px;
-font-weight: bold;
-margin-left: 56px;
-}
-.more{
-    font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 170%;
-/* identical to box height, or 24px */
-text-decoration: none;
-text-align: justify;
-margin-left: 56px;
-cursor: pointer;
-/* Blue1 */
-text-transform: uppercase;
-color: #1C445A;
-}
-@media only screen and (max-width:768px){
-    .title>p{
-        font-size: 16px;
-        line-height: 18px;
-    }
-    .description,.theme{
-        font-size: 13px;
-        line-height: 16px;
-    }
-    .title,.description{
-        margin-right: 14px;
-    }
-    .aboutChild2{
-        display: none;
-    }
-    .more{
-        font-size: 11px;
-    }
-}
-@media only screen and  (min-width:1600px){
-    .title>p{
-        font-size: 30px;
-        line-height: 36px;
-    }
-    .description,.theme{
-        font-size: 20px;
-        line-height: 28px;
-    }
-    .more{
-        font-size: 20px;
-        line-height: 26px;
-    }
+  }
 }

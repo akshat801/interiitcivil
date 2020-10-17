@@ -17,8 +17,8 @@ export default class Events extends React.Component {
         image: case_studies,
       },
       {
-        title: "PG Research Work Presentation",
-        date: "7, November 2020",
+        title: "UG, PG & PhD Research Work Presentation",
+        date: "7th November 2020",
         description:
           "Presentation of Research Work to a committee of veterans from discipline of Civil Engineering.",
         image: pg_research,
@@ -31,9 +31,9 @@ export default class Events extends React.Component {
       // },
       {
         title: "Guest Lectures",
-        date: "7 & 8, November 2020",
+        date: "7th & 8th November 2020",
         description:
-          " A series of 6 lectures each of half hour covering all disciplines of Civil Engineering ",
+          " A series of lectures by eminent speakers covering all disciplines of Civil Engineering.",
         image: lectures,
       },
     ];
