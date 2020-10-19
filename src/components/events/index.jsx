@@ -58,7 +58,7 @@ export default class Events extends React.Component {
                         {list.description}
                       </p>
                       {list.title === "guest lectures" ? null : list.title ===
-                        "Case studies" ? (
+                        "Case Studies" ? (
                         <Link className={styles.readProblem} to="/problems">
                           read problem statements
                         </Link>
